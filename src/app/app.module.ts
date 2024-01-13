@@ -7,12 +7,16 @@ import { Test1Module } from './test1/test1.module';
 import { FlightModule } from './flight/flight.module';
 import { HotelsModule } from './hotels/hotels.module';
 import { TrainsModule } from './trains/trains.module';
+import { HeaderComponent } from './services/header/header.component';
+import { FooterComponent } from './services/footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
   
   ],
   imports: [
