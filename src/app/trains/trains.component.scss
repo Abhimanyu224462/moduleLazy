@@ -1,0 +1,19 @@
+
+@mixin mixall{
+    color: red;
+    box-shadow: 5px;
+    background-color: aqua;
+}
+
+.mix1{
+   @include mixall
+}
+
+.mix2{
+   @include mixall
+}
+
+
+.mix3{
+    @include mixall
+}

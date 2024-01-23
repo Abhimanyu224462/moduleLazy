@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { canAccessGuard } from './canAccess.guard';
+import { TestComponent } from './test/test.component';
+import { CreateBookingComponent } from './create-booking/create-booking.component';
+import { BookingListComponent } from './booking-list/booking-list.component';
 
 
 const routes: Routes = [
@@ -8,7 +11,11 @@ const routes: Routes = [
   
  { path: 'flight', loadChildren: () => import('./flight/flight.module').then(m => m.FlightModule),canLoad:[canAccessGuard] },
   
- { path: 'trains', loadChildren: () => import('./trains/trains.module').then(m => m.TrainsModule) }
+ { path: 'trains', loadChildren: () => import('./trains/trains.module').then(m => m.TrainsModule) },
+
+ {path:'test',component:TestComponent},
+ {path:'create-booking', component:CreateBookingComponent},
+ {path:'booking-list', component:BookingListComponent}
   
 ];
 

@@ -29,9 +29,6 @@ export class SharedService {
     this.subject$.next(data)
   }
 
-
-
-
- 
- 
 }
+
+
